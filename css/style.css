@@ -1,0 +1,63 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+}
+
+body, p, tr, td, th {
+  font-size:9pt;
+}
+
+h1 {
+  font-size:12pt;
+  font-weight:bold;
+}
+
+h2 {
+  font-size:10pt;
+  font-weight:bold;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.menu {
+  vertical-align: middle;
+}
+
+.iconTitle {
+  border:none;
+  padding:8px 8px;
+  vertical-align:middle;
+  float: right;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
+}
+.iconTheme {
+  border:none;
+  padding:8px 8px;
+  vertical-align:middle;
+  float: right;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
+}
