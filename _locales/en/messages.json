@@ -1,0 +1,34 @@
+{
+    "extName":  {
+      "message": "Force Incognito URL",
+      "description": "The extension name."
+    },
+    "extDescription": {
+      "message": "Force specified URLs opening in incognito mode.",
+      "description": "The extension description."
+    },
+    "extTitle": {
+      "message": "Incognito mode configurator.",
+      "description":"The extension title."
+    },
+    "mainTitle": {
+        "message": "Force Incognito URL",
+        "description":"The main title."
+    },
+    "syncedURLsTitle": {
+        "message": "My URLs"
+    },
+    "managedURLsTitle": {
+        "message": "Managed URLs"
+    },
+    "settingsTitle": {
+        "message": "Settings"
+    },
+    "themeButtonLabel": {
+        "message": "Dark theme"
+    },
+    "dumpHtmlLogs": {
+        "message": "Extension logs"
+    }
+  }
+  
