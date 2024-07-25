@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        
+        "settings": {
+            "type": "object",
+            "properties": {
+                "managedby": {
+                    "type": "string"
+                },
+                "enableEditMode": {
+                    "type": "boolean"
+                },
+                "width": {
+                    "type": "integer"
+                },
+                "height": {
+                    "type": "integer"
+                },
+                "language": {
+                    "type": "string"
+                }
+            }
+        },
+        "url_list": {
+            "type": "array",
+            "items": {
+                "type" : "object",
+                "properties":{
+                    "name": {
+                        "type": "string"
+                    },
+                    "url" : {
+                        "type": "string"
+                    }
+                }    
+            }
+        }
+    }
+}

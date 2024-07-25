@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force Incognito URLs</title>
+  <link rel="icon" type="image/x-icon" href="./img/incognito_16.png">
+  <meta http-equiv="Content-Security-Policy"
+    content="script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' http://localhost:* http://127.0.0.1:*">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/template_style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header" class="gjs-grid-row">
+    <!-- Icon -->
+    <div class="gjs-grid-column" id="icon">
+      <img src="./img/incognito_48.png" alt="Force Incognito URL">
+    </div>
+    <!-- Title -->
+    <div id="title" class="gjs-grid-column">
+      <div><h2 id="mainTitle"></h2></div>
+    </div>
+    <!-- Theme -->
+    <div class="Theme" id="Theme">
+      <div class="iconTheme" id="iconTheme">
+        <span class="material-symbols-outlined">
+          toggle_on
+        </span>
+      </div>
+      <div class="titleTheme" id="titleTheme"></div>
+        <label id="themeButtonLabel"></label>
+      </div>
+    </div>
+  </div>
+  <!-- Container -->
+  <div id="container" class="gjs-grid-row">
+    <div id="feature_container" class="gjs-grid-column">
+      <!-- Managed by -->
+      <div id="managed_by" class="text-main-content">
+      </div>
+      <!-- Add area -->
+      <div id="add_area">
+        <div class="gjs-grid-row">
+          <!-- Add Name -->
+          <div id="add_name">
+            <div class='wrapper' id="add_name-name">Name</div>
+            <div class='wrapper'><input type="text" id="inputAdd_Name"/></div>
+          </div>
+          <!-- Add URL -->
+          <div id="add_url">
+            <div class='wrapper' id="add_url-name">URL<br/></div>
+            <div class='wrapper'><input type="text" id="inputAdd_URL"/></div>
+          </div>
+          <!-- Add URL Send -->
+          <div id="add_url-send">
+            <div class='wrapper'></div>
+            <div class='wrapper'><button id="submitInput">Submit</button></div>
+          </div>
+        </div>
+        <div class="gjs-grid-row">
+          <!-- Update Width -->
+          <div id="update_native_resolution_width">
+            <div class='wrapper' id="update_width">Width</div>
+            <div class='wrapper'><input type="text" id="inputWidth"/></div>
+          </div>
+          <!-- Update Height -->
+          <div id="update_native_resolution_height">
+            <div class='wrapper' id="update_height">Height<br/></div>
+            <div class='wrapper'><input type="text" id="inputHeight"/></div>
+          </div>
+          <!-- Update Native Resolution Button -->
+          <div id="update_native_resolution_button">
+            <div class='wrapper'></div>
+            <div class='wrapper'><button id="submit_native_resolutionInput">Submit</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- URLs area -->
+      <div id="urls" class="gjs-grid-row">
+        <!-- Showing Managed URLs -->
+        <div id="managed_urls" class="gjs-grid-column urls">
+          <!-- Managed URLs Title -->
+          <div id="managed_urls-title" class="gjs-grid-row">
+            <h4 id="managedURLsTitle"></h4>
+          </div>
+          <div id="outputManagedURLs">
+          </div>
+          <div>
+            <span id="policies"></span>
+          </div>
+        </div>
+        <!-- Showing Synced URLs -->
+        <div id="syncedURLs" class="gjs-grid-column urls">
+          <!-- Synced URLs Title -->
+          <div id="synced_urls-title" class="gjs-grid-column">
+            <h4 id="syncedURLsTitle"></h4>
+          </div>
+          <div id="outputSyncURLs">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div id="extensionID">Extension ID : 
+    <span id="appID"></span>
+  </div>
+    <div id="footer" class="gjs-grid-row">
+      <div id="footer_text" class="gjs-grid-column">
+        Open source project, made on ChromeOS.
+      
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <!-- Identify your business so that you can collect the payments. -->
+          <input type="hidden" name="business" value="donate@diatoma.app">
+          <!-- Specify details about the contribution -->
+          <input type="hidden" name="no_recurring" value="0">
+          <input type="hidden" name="item_name" value="Friends of the Park">
+          <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+          <input type="hidden" name="currency_code" value="EUR">
+          <!-- Display the payment button. -->
+          <input type="image" name="submit" src="./img/paypal_button.png" alt="Donate">
+          <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+      </div>
+    </div>
+    <!-- Script -->
+    <script type="text/javascript" src="./js/option.js"></script>
+  </div>
+</body>
+
+</html>

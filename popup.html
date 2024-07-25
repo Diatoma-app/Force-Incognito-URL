@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force Incognito URLs</title>
+  <meta http-equiv="Content-Security-Policy"
+    content="script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' http://localhost:* http://127.0.0.1:*">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="w3-light-gray">
+  <!-- Title -->
+  <!-- Icon -->
+  <div class="w3-container w3-dark-gray" id="popupTitle">
+    <div class="row">
+      <div class="column">
+        <div id="titleContainer">
+          <h1 id="mainTitle"></h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="iconTitle" id="iconMenu">
+          <a href="./option.html"target="_blank"><span class="material-symbols-outlined">settings</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Showing Synced URLs -->
+  <div class="w3-card w3-margin" id="syncedURLs">
+    <!-- Synced URLs Title -->
+    <div class="w3-container w3-gray">
+      <h2 id="syncedURLsTitle"></h2>
+    </div>
+    <!-- Synced URLs Configuration -->
+    <div class="w3-container w3-padding">
+      <div class="w3-row w3-section">
+        <div class="row">
+          <!-- Synced URLs Configuration Names -->
+          <div class="column">
+            <div id="syncedHTMLNames">
+            </div>
+          </div>
+          <!-- Synced URLs Configuration URLs -->
+          <div class="column">
+            <div id="syncedHTMLURLs">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Showing Managed URLs-->
+  <div class="w3-card w3-margin" id="managedURLs">
+    <!-- Managed URLs Title -->
+    <div class="w3-container w3-gray">
+      <h2 id="managedURLsTitle"></h2>
+    </div>
+    <!-- Managed URLs Configuration -->
+    <div class="w3-container w3-padding">
+      <div class="w3-row w3-section">
+        <div class="row">
+          <!-- Managed URLs Configuration Names -->
+          <div class="column">
+            <div id="managedHTMLNames">
+            </div>
+          </div>
+          <!-- Managed URLs Configuration URLs -->
+          <div class="column">
+            <div id="managedHTMLURLs">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Showing Settings-->
+  <div class="w3-card w3-margin" id="settings">
+    <!-- Settings Title -->
+    <div class="w3-container w3-gray">
+      <h2 id="settingsTitle"></h2>
+    </div>
+    <!-- Settings Configuration -->
+    <div class="w3-container w3-padding">
+      <div class="w3-row w3-section">
+        <div class="row">
+          <!-- Synced Settings Configuration -->
+          <div class="column">
+            <div id="syncedHTMLSettings">
+            </div>
+          </div>
+          <!-- Managed Settings Configuration -->
+          <div class="column">
+            <div id="managedHTMLSettings">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+	<!-- Script -->
+  <script type="text/javascript" src="./js/popup.js"></script>
+</body>
+
+</html>
