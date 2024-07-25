@@ -1,0 +1,23 @@
+{
+    "settings" : {
+        "Value" : {
+            "managedby" : "myCompany",
+            "enableEditMode" : "true",
+            "width" : "1280",
+            "height" : "800",
+            "language" : "EN"
+        }
+    },
+    "url_list" : {
+        "Value" : [
+            {
+                "name" : "Wikipedia",
+                "url" : "wikipedia.org"
+            },
+            {
+                "name" : "Wikipedia",
+                "url" : "wikipedia.com"
+            }
+        ]
+    }
+}
