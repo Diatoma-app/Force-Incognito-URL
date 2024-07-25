@@ -2,7 +2,7 @@
 
 ## What is doing this extension
 
-This extension is built in order to implement more complex business logic for opening specifics URLs in Incognito mode.
+This extension is built in order to implement more complex business logic for opening specifics URLs in Incognito mode but can be used by an end user.
 
 ## Deployment of the extension
 
